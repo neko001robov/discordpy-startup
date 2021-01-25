@@ -16,8 +16,9 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
-    
-async def karasawa(ctx):
-    await ctx.send('無能')
+
+@bot.command()
+async def dog(ctx):
+    await ctx.send('餌を、与えないと、死にます。')
 
 bot.run(token)
